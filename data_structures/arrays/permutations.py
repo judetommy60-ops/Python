@@ -24,6 +24,8 @@ def permute_backtrack(nums: list[int]) -> list[list[int]]:
 
     >>> permute_backtrack([1, 2, 3])
     [[1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 2, 1], [3, 1, 2]]
+    >>> permute_backtrack([])
+    [[]]
     """
 
     def backtrack(start: int) -> None:
@@ -46,3 +48,7 @@ if __name__ == "__main__":
     result = permute_backtrack([1, 2, 3])
     print(result)
     doctest.testmod()
+
+
+
+
